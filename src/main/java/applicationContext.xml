@@ -28,4 +28,6 @@
 
 	<bean id="doAfterAspect" class="skyfly33.aspect.DoAfterAspect" />
 
+	<bean id="doAfterReturningAspect" class="skyfly33.aspect.DoAfterReturningAspect" />
+
 </beans>
