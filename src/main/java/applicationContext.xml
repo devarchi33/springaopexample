@@ -30,4 +30,5 @@
 
 	<bean id="doAfterReturningAspect" class="skyfly33.aspect.DoAfterReturningAspect" />
 
+	<bean id="doAfterThrowingAspect" class="skyfly33.aspect.DoAfterThrowingAspect" />
 </beans>
