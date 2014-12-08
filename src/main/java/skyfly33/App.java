@@ -8,24 +8,23 @@ public class App {
 	public static void main(String[] args) {
 
 		ConfigurableApplicationContext ctx = new ClassPathXmlApplicationContext(
-				"applicationContext.xml");
+//				"applicationContext.xml");
+				"aopApplicationContext.xml");
 
 		SimpleService ss = (SimpleService) ctx.getBean("simpleServiceBean");
 
 		ss.printName();
 		System.out.println("----------------");
-
 		try {
 			ss.checkName();
 		} catch (Exception e) {
 			System.out
 					.println("SimpleService checkName() : Exception thrown..");
-		}		
+		}
 		System.out.println("----------------");
-		
+		System.out.println("----------------");
 		ss.sayHello("skyfly33");
 		System.out.println("----------------");
-		
 		ctx.close();
 
 	}
